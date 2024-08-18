@@ -22,8 +22,13 @@ else:
     print("ALERT! Computer offline!")
 
 # c) If shuttle_speed is > 17,500, print "ALERT: Escape velocity reached!" Else if shuttle_speed is < 8000, print "ALERT: Cannot maintain orbit!" Else print "Stable speed".
-
+if shuttleSpeed > 17500:
+    print("ALERT: Escape velocity reached!")
+elif shuttleSpeed < 8000:
+    print("AlERT: Cannot maintain orbit!")
+else:
+    print("Stable speed.")
 
 # 4) PREDICT: Do the code blocks shown in the Section D produce the same result?
-
+# Yes.
 # print("Yes" or "No")
