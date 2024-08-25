@@ -10,15 +10,16 @@ flavors = {
 }
 
 ## Set a variable called choice to the flavor you want to search for.
-
+choice = 'fudge chunk'
 ## Use an if statement to check if choice is in the flavors dictionary.
-
+if choice in flavors:
 ## If it is, set another variable called cost to the value associated with choice.
-
+    cost = flavors[choice]
 ## If it isn’t, set cost to 0.
-
+else:
+  cost = 0
 ## Print the cost.
-
+print('The cost of', choice, 'is', cost)
 ### Search a Dictionary Part 2:
 
 ## Initialize two variables: highest_cost to 0 and fanciest to an empty string.
