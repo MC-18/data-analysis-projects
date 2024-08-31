@@ -12,9 +12,13 @@ def make_line(size):
 # def make_square(size):
 #     square = ""
 #     for i in range(size):
+#         line = make_line(size)
 #         square += (make_line(size) + "\n")
 #     return square
 # print(make_square(5))
+
+
+
 
 # Part 1 C -- Make a Rectangle
 def make_rectangle(width, height):
@@ -22,9 +26,11 @@ def make_rectangle(width, height):
     for i in range(height):
         rectangle += (make_line(width) + "\n")
     return rectangle
-print(make_rectangle(5, 3))
+# print(make_rectangle(5, 3))
 
-
+def make_square(size):
+    return (make_rectangle(size, size))
+print(make_square(5))
 
 
 # Part 2 A -- Make a Stairs
