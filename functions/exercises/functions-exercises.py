@@ -21,25 +21,33 @@ def make_line(size):
 
 
 # Part 1 C -- Make a Rectangle
-def make_rectangle(width, height):
-    rectangle = ""
-    for i in range(height):
-        rectangle += (make_line(width) + "\n")
-    return rectangle
+# def make_rectangle(width, height):
+#     rectangle = ""
+#     for i in range(height):
+#         rectangle += (make_line(width) + "\n")
+#     return rectangle
 # print(make_rectangle(5, 3))
 
-def make_square(size):
-    return (make_rectangle(size, size))
-print(make_square(5))
+# Making a square using make_rectangle
+# def make_square(size):
+#     return (make_rectangle(size, size))
+# print(make_square(5))
 
 
 # Part 2 A -- Make a Stairs
-
-
-
-
+# def make_downward_stairs(height):
+#     stairs = ""
+#     for i in range(height):
+#         stairs += (make_line(i + 1) + "\n")
+#     return stairs
+# print(make_downward_stairs(5))
 
 # Part 2 B -- Make Space-Line 
+def make_space_line(numSpaces, numChars):
+    spaces = "_" * numSpaces
+    chars = "#" * numChars
+    return spaces + chars + spaces
+print(make_space_line(3, 5))
 
 
 
