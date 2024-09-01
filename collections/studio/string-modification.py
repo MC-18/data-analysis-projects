@@ -22,3 +22,6 @@ print(altered_string)
 # c) Add validation to your code to deal with user inputs that are longer than 
 # the word. In such cases, default to moving 3 characters. Also, the template 
 # literal should note the error.
+if selection_int > len(my_string):
+    print("Input is greater than the length of the string.")
+    selection_int = 3
