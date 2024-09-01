@@ -4,11 +4,14 @@
 # b) Within the function, use the 'list' function to split a string into a list of individual characters
 # c) 'reverse' your new list.
 # d) Use 'join' to create the reversed string and return that string from the function.
-# e) Create a variable of type string to test your new function. # f) Use 'print(reverse_characters(my_variable_name))'; to call the function and verify that it correctly reverses the characters in the string.
+# e) Create a variable of type string to test your new function. 
+# f) Use 'print(reverse_characters(my_variable_name))'; to call the function and verify that it correctly reverses the characters in the string.
 # g) Use method chaining to reduce the lines of code within the function.
-
-
-
+def reverse_characters(string):
+    individual_list = list(string)
+    'individual_list.reverse()'.join(individual_list)
+variable_name = 'apple'
+print(reverse_characters(variable_name))
 # 2) The 'split' method does not work on numbers, but we want the function to return a number with all the digits reversed (e.g. 1234 converts to 4321 and NOT the string "4321")
 # a) Add an if statement to your reverse_characters function to check the typeof the parameter.
 # b - d) If type is ‘string’, return the reversed string as before. If type is ‘number’, convert the parameter to a string, reverse the characters, then convert it back into a number. Return the reversed number.
