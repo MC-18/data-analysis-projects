@@ -1,9 +1,9 @@
 # Part 1 A -- Make a Line
-def make_line(size):
-    line = ""
-    for i in range(size):
-        line += "#"
-    return line
+# def make_line(size):
+#     line = ""
+#     for i in range(size):
+#         line += "#"
+#     return line
 
 # print(make_line(5))
 
@@ -43,22 +43,32 @@ def make_line(size):
 # print(make_downward_stairs(5))
 
 # Part 2 B -- Make Space-Line 
+# I admit to using chatGPT to help me through this. I was really struggling because i was thinking i needed to provide a 
+# default parameter value for the second numSpaces
 def make_space_line(numSpaces, numChars):
-    spaces = "_" * numSpaces
+    spaces = " " * numSpaces
     chars = "#" * numChars
     return spaces + chars + spaces
-print(make_space_line(3, 5))
-
-
-
-
-
+# print(make_space_line(3, 5))
 # Part 2 C -- Make Isosceles Triangle
+def make_isosceles_triangle(height):
+    triangle = ""
+    for i in range(height):
+        triangle += (make_space_line(height - i - 1, 2 * i + 1) + "\n")
+    return triangle
+
+print(make_isosceles_triangle(5))
 
 
 
 
-
+# def make_square(size):
+#     square = ""
+#     for i in range(size):
+#         line = make_line(size)
+#         square += (make_line(size) + "\n")
+#     return square
+# print(make_square(5))
 # Part 3 -- Make a Diamond
 
 
