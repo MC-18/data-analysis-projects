@@ -57,19 +57,18 @@ def make_isosceles_triangle(height):
         triangle += (make_space_line(height - i - 1, 2 * i + 1) + "\n")
     return triangle
 
-print(make_isosceles_triangle(5))
+# print(make_isosceles_triangle(5))
 
-
-
-
-# def make_square(size):
-#     square = ""
-#     for i in range(size):
-#         line = make_line(size)
-#         square += (make_line(size) + "\n")
-#     return square
-# print(make_square(5))
 # Part 3 -- Make a Diamond
+def make_diamond(height):
+    diamond = ""
+    triangle = make_isosceles_triangle(height)
+    diamond += triangle[:-1]
+    for i in range(len(triangle)-1, -1, -1):
+        diamond += triangle[i]
+    return diamond
+
+print(make_diamond(5))
 
 
 
