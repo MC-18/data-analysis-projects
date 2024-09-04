@@ -1,8 +1,8 @@
 # Part 1 A -- Make a Line
 def make_line(size):
-    line = ""
+    line = "" # "" is an empty string
     for i in range(size):
-        line += "#"
+        line += "#" # += is concatenating the hashtags 
     return line
 
 print(make_line(5))
@@ -25,11 +25,16 @@ def make_rectangle(width, height):
     return rectangle
 print(make_rectangle(5, 3))
 
-# Making a square using make_rectangle
+# Making a square using make_rectangle; i used gpt to help me through this one. 
 def make_square(size):
     return (make_rectangle(size, size))
 print(make_square(5))
 
+# another way to make a square using make_rectangle; provided during lecture
+def make_square(size):
+    square = make_rectangle(size, size)
+    return square
+print(make_square(5))
 
 # Part 2 A -- Make a Stairs
 def make_downward_stairs(height):
