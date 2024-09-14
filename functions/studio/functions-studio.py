@@ -7,10 +7,12 @@
 # f) Use 'print(reverse_characters(my_variable_name))'; to call the function and verify that it correctly reverses the characters in the string.
 # g) Use method chaining to reduce the lines of code within the function.
 def reverse_characters(word):
-
-    # return reverse_string
-# my_variable_name = 'apple'
-# print(reverse_characters(my_variable_name))
+    char_list = list(word)
+    char_list.reverse()
+    reverse_string = ''.join(char_list)
+    return reverse_string
+my_variable_name = 'apple'
+print(reverse_characters(my_variable_name))
 
 # 2) The 'split' method does not work on numbers, but we want the 
 # function to return a number with all the digits reversed (e.g. 1234 converts to 4321 
@@ -29,20 +31,11 @@ def reverse_characters(word):
 my_variable_name = 'radar'
 print(reverse_characters(my_variable_name))
 # # b - d) If type is ‘string’, return the reversed string as before. 
-#     if type(word) == str:
-#         char_list = word.split
-
 # If type is ‘number’, convert the parameter to a string, reverse the 
 # characters, then convert it back into a number. Return the reversed number.
-
 # e) Be sure to print the result returned by the function to verify 
 # that your code works for both strings and numbers. Do this before moving 
 # on to the next steps.
-
-
-
-
-
 
 # 3) Create a new function with one parameter, which is the list we want to change. The function should:
 # a) Define and initialize an empty list.
